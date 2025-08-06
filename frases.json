@@ -2,7 +2,7 @@
     "tarjetas": [
       { "tipo": "video", "src": "Videos/Video1.mp4", "frase": "Tú no tienes idea de lo mucho que aportas sin darte cuenta." },
       { "tipo": "foto", "src": "Images/Foto1.jpeg", "frase": "Tienes esa manera tranquila de hacer que todo esté bien." },
-      { "tipo": "video", "src": "Cideos/Video2.mp4", "frase": "Hay gente que simplemente hace el mundo más amable. Tú eres de esas." },
+      { "tipo": "video", "src": "Videos/Video2.mp4", "frase": "Hay gente que simplemente hace el mundo más amable. Tú eres de esas." },
       { "tipo": "foto", "src": "Images/Foto2.jpeg", "frase": "No necesitas hablar fuerte para dejar huella." },
       { "tipo": "video", "src": "Videos/Video3.mp4", "frase": "Tú no haces ruido... haces sentido." },
       { "tipo": "foto", "src": "Images/Foto3.jpeg", "frase": "No sé cómo lo haces, pero siempre estás cuando más se necesita." },
