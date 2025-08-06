@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom, #fce4ec, #f8bbd0, #f3cfe5);
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+/* Fondo con estrellas flotantes */
+.estrellas {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background-image: radial-gradient(rgba(241, 175, 33, 0.829) 1px, transparent 1px);
+  background-size: 90px 90px;
+  animation: movimientoEstrellas 40s linear infinite;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* Movimiento sutil */
+@keyframes movimientoEstrellas {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+/* Contenedor principal */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 2s ease;
+}
+
+
+/* Flor central */
+.flor-central {
+  width: 200px;
+  animation: aparecer 3s ease forwards;
+  margin-bottom: 20px;
+}
+
+/* Texto principal */
+.nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  color: #c85a82;
+  animation: aparecer 3s ease forwards;
+  letter-spacing: 2px;
+}
+.subtitulo {
+  font-size: 1.3rem;
+  color: #7d4f5d;
+  margin-bottom: 30px;
+  animation: aparecer 3s ease forwards;
+}
+
+/* Botón */
+.btn-explorar {
+  background-color: #f8c7d8;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: #5c3e47;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 190, 220, 0.5);
+  animation: aparecer 3s ease forwards;
+}
+.btn-explorar:hover {
+  background-color: #f3a9c2;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 190, 220, 0.7);
+}
+
+
+/* Animaciones */
+@keyframes vuelo {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(110vw, -50vh) rotate(55deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes aparecer {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
